@@ -1,0 +1,6 @@
+env: dev
+replicaCount: 1
+PodDisruptionBudget:
+  enabled: false
+  # minAvailable can be an integer or percentage (e.g. 1 or "50%")
+  minAvailable: 1

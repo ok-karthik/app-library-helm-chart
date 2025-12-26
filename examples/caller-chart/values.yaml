@@ -1,0 +1,17 @@
+env: dev
+deployment:
+  replicas: 2
+  containers:
+    main:
+      name: myapp
+      image:
+        name: ghcr.io/OWNER/myapp
+        tag: 1.2.3
+service:
+  type: ClusterIP
+  port: 8080
+  targetPort: 8080
+ingress:
+  enabled: false
+PodDisruptionBudget:
+  enabled: false

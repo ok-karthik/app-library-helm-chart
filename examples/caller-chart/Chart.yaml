@@ -1,0 +1,7 @@
+apiVersion: v2
+name: caller-chart
+version: 0.1.0
+dependencies:
+  - name: library-chart
+    version: 1.0.0
+    repository: oci://ghcr.io/OWNER
